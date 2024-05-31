@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 设置网页缩放信息 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入本地css文件 -->
+    <link rel="stylesheet" href="css/frame.css">   
+    <link rel="stylesheet" href="css/index.css"> 
+    <!-- 网页标题 -->
+    <title>主页</title>
+</head>
+<body>
+    <div class="html">
+        <!-- 顶部 -->
+        <header class="top">
+            <div class="top_detail">
+                <div class="top_top">
+                    <span class="logo">XXX</span>
+                    <p>主页</p>
+                </div>
+                <!-- 分割线 -->
+                <div class="partioner"></div>
+                <div class="navigation">
+                    <div class="top_buttom">
+                        <ul class="detail">
+                            <li><a href="#" id="default" class="loader">主页</a></li>
+                            <li><a href="me.html">个人简介</a></li>
+                            <li><a href="enamoured.html">个人爱好</a></li>
+                            <li><a href="score.html">个人成绩</a></li>
+                            <li><a href="evaluation.html">自我评价</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Banner条 -->
+            <div class="banner"></div>
+        </header>
+        <!-- 主页面内容区 -->
+        <div class="main">
+            <div class="mainTop">
+                <a href="me.html"><img src="images/导航1.jpg" class="divCartoon" alt="导航1"><span>个人简介</span></a>
+                <a href="enamoured.html"><img src="images/导航2.jpg" class="divCartoon" alt="导航2"><span>个人爱好</span></a>
+                <a href="score.html"><img src="images/导航3.jpg" class="divCartoon" alt="导航3"><span>个人成绩</span></a>
+                <a href="evaluation.html"><img src="images/导航4.jpg" class="divCartoon" alt="导航4"><span>自我评价</span></a>
+            </div>
+            <div class="mainBottom">
+                <p>"梦想与现实之间的距离叫行动"</p>
+                <p>The distance between a dream and a reality is<br> called action"</p>
+                <p>减少期待,调整心态</p>
+                <p>"Reduce expectatios and adjust your mindset"</p>
+                <p>减少期待,调整心态</p>
+                <p>"Reduce expectatios and adjust your mindset"</p>
+                <p>"梦想与现实之间的距离叫行动"</p>
+                <p>The distance between a dream and a reality is<br> called action"</p>
+            </div>
+            <div class="myMusic">
+                <audio id="musicAudio" src="musics/Christopher - Told You So.mp3"></audio><!--默认隐藏-->
+                <img src="musics/img/Told you so.jpg" class="divCartoon" alt="音乐图片" id="musicImg">
+                <p id="musicDetail">Christopher - Told You So</p>
+                <img src="musics/img/加载.png" id="load" class="divCartoon" onclick="getRandomMusic()" alt="加载"></img>
+                <img src="musics/img/音量.png" id="volume" class="divCartoon" onclick="volume()" alt="音量"></img>
+                <img src="musics/img/播放.png" id="player" class="divCartoon" onclick="play()" alt="播放"></img>
+                <script type="text/javascript">  
+                    var audio=document.getElementById('musicAudio');
+                    var musicImg=document.getElementById('musicImg');
+                    var musicDetail=document.getElementById('musicDetail');
+                    var musicVolume=document.getElementById('volume');
+                    var player=document.getElementById('player');
+                    function getRandomMusic() {  
+                        //请求链接
+                        const url = 'https://api.vvhan.com/api/wyMusic/新歌榜?type=json';  
+                        // 发送请求 
+                        fetch(url)  
+                            .then(response => {  
+                                //判断返回
+                                if (!response.ok) {  
+                                    throw new Error('请求失败 ');  
+                                }  
+                                // 返回  
+                                return response.json();  
+                            })  
+                            .then(data => {  
+                                audio.src=data.info.url;
+                                musicImg.src =data.info.picUrl;
+                                musicDetail.innerText=data.info.name+"—"+data.info.auther;
+                                player.src='musics/img/播放.png';
+                                musicImg.className='divCartoon';
+                            })  
+                            .catch(error => {  
+                                console.error('获取歌曲数据失败 :', error);  
+                            });  
+                        }
+                    function volume(){
+                        if(audio.muted==false){
+                            audio.muted =true;
+                            musicVolume.src='musics/img/静音.png';
+                        }else{
+                            audio.muted=false;
+                            musicVolume.src='musics/img/音量.png';
+                        }
+                    }
+                    function play(){
+                        if(audio.paused==false){
+                            audio.pause();
+                            player.src='musics/img/播放.png';
+                            musicImg.className='divCartoon';
+                        }else{
+                            audio.play();
+                            player.src='musics/img/暂停.png';
+                            musicImg.className='spin-image divCartoon';
+                        }
+                    }
+                </script> 
+            </div>
+        </div>
+    </div>
+     <!-- 版权信息 -->
+    <div class="copyrights">
+        <p class="footer">Copyright &copy; 2021.Company name All rights reserved.</p>
+    </div>
+</body>
+
+</html>

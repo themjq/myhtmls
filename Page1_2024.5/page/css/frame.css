@@ -1,0 +1,248 @@
+/* 清楚浏览器的默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    /*移除选中元素时，其周围的轮廓线*/
+    appearance: 0;
+    /*移除表单元素的默认样式*/
+    border: 0;
+    /*移除元素边框*/
+    text-decoration: none;
+    /*移除文本装饰效果(下划线等)*/
+    box-sizing: border-box;
+    /*设置元素的宽度和高度会包括内容、内边距和边框，但不包括外边距*/
+    user-select: none;  /*禁止用户选中*/
+}
+
+@font-face {
+    font-family: 'Pacifico';   /*字体名称*/
+    src: url('../font/Pacifico.ttf');       /*字体源文件*/
+}
+@font-face {
+    font-family: 'XiangCui'; 
+    src: url('../font/XiangCui.ttf');    
+}
+@font-face {
+    font-family: 'Douyin';  
+    src: url('../font/DouyinSansBold.otf'); 
+}
+@font-face {
+    font-family: 'ShaYu'; 
+    src: url('../font/ShaYu.ttf');   
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    height: 100%;    /*设置宽度以保证footer居于页面底部 (.html和.main中也要设置(页面中要保证充满100%height))*/
+    min-height: 100%;
+    /* background-image: url("../images/background.jpg"); */
+    background-color: #171717;
+    background-attachment:fixed;  /*图片滚动形式:静止*/
+    background-size: 100%;
+    z-index: 0;
+    font-family: ShaYu;
+}
+/* 顶部 */
+.html{
+    position: relative;
+    left: 0;
+    right: 0;
+    min-width: 1400px;
+    height: auto;
+    min-height: 100%;
+    margin: 0 auto;
+}
+.top{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #282828;
+    border: 1px solid whitesmoke;
+}
+.top .top_detail{
+    width: 1000px;
+    margin: 0 auto;
+}
+.top_top{
+    display: flex;  /*父类设置flex布局,使子类可以在一行内存在*/
+    width: 100%;
+    background-color: #282828;
+    color: aliceblue;
+}
+ /* logo */
+.top .top_top .logo{
+    font-family: 'Pacifico';
+    font-size: 2rem;
+    line-height: 1.1;
+    letter-spacing:3px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.top .top_top p{
+    margin-top: 30px;
+    margin-left: 15px;
+}
+.top .banner{
+    position: absolute;
+    left: 0;
+    right: 0;
+    border: 1px solid whitesmoke;
+}
+.top .partioner{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: whitesmoke;
+}
+.top .top_buttom{
+    margin-top: 8px;
+    width: 100%;
+    height: 25px;
+}
+.top .top_buttom ul{
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+}
+.top .top_buttom ul li{
+    padding: 1px 5px;
+    margin: 0px 10px 1px 10px;
+    list-style-type:none;  /*去除前面的圆点*/
+}
+.top .top_buttom ul li a{
+    color: whitesmoke;
+    margin: 0 15px;
+    transition: all 0.5s;
+    position: relative;
+    padding-bottom: 5px;
+    bottom: 3px;
+}
+.top .top_buttom ul li a:hover{
+    bottom: 8px;
+}
+
+.loader {
+    position: relative;
+    border-radius: 2px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 1px;
+    background: linear-gradient(rgb(242, 242, 243) 0 0) 0 100%/0% 3px no-repeat;
+    animation: load 2s linear infinite;
+  }
+  @keyframes load {to{background-size: 100% 3px}}
+/*default 默认选中页面*/
+#default{
+    font: bolder;
+}
+
+.main{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(26, 25, 24, 0.6);
+    border-radius: 15px;
+    padding-bottom: 125px;
+    display: flex;
+}
+
+
+/* 设置了该属性的元素，当鼠标放上时会有对应的变大变小效果 */
+.card{
+    cursor: pointer; /*鼠标放上时变小手*/
+    transition: all 0.5s;  /*动画*/
+}
+.card:hover{
+    transform: scale(1.05);
+    transition:0.5s;
+}
+.card:active {
+    transform: scale(0.9);
+    transition:0.5s;
+  }
+.card2{
+    cursor: pointer; /*鼠标放上时变小手*/
+    transition: all 0.5s;  /*动画*/
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.card2:hover{
+    transform: scale(1.05);
+    transition:0.5s;
+    border: 1px solid #ffffff;
+}
+/* 版权部分 */
+.copyrights {
+    border-top: 1px dashed rgba(255, 255, 255, 0.1);
+    background-color: #1f1f1f;
+    min-width: 1400px;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.copyrights .footer{
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

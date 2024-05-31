@@ -1,0 +1,89 @@
+.main{
+  width: 1300px;
+  top: 50px;
+}
+.myCard {
+  --gray:  rgba(229, 231, 235, 1); /*CSS自定义属性*/
+  width: 90%;
+  height: 750px;
+  display: flex;
+  /*设置card内的元素间距*/
+  row-gap: 20px;  /*行*/
+  column-gap: 25px;  /*列*/
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255,0.8);
+  padding: 50px;
+}
+
+.myCard1 {
+  width: 41%;
+  border-radius: 15px;
+  background-color: var(--gray);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6) alternate-reverse infinite;
+}
+.myCard1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 15px;
+}
+.top_detail .top_top img{
+	margin-top: 15px;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;}
+.right {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  row-gap: 50px;
+  font-family: Douyin;
+}
+
+.myCard2 {
+  height: 75px;
+  width: 100%;
+  border-radius: 15px;
+  background-color: var(--gray);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) alternate-reverse infinite;
+}
+.myCard2 p{
+  font-size: 45px;
+  line-height: 85px;
+}
+.myCard3 {
+  height: 12px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: var(--gray);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) alternate-reverse infinite;
+}
+.myCard3 p{
+  font-size:32px;
+  position: relative;
+  top: -35px;
+  left: 10px;
+}
+.myCard3 p span{
+  font-size: 25px;
+  margin-left: 15px;
+}
+.bottom {
+  margin-top: auto;
+  display: flex;
+  grid-gap: 0.75rem;
+  gap: 0.75rem;
+}
+
+.myCard4 {
+  height: 2rem;
+  width: 33%;
+  border-radius: 9999px;
+  background-color: var(--gray);
+  animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) alternate-reverse infinite;
+}
+@keyframes pulse {
+  to {
+    opacity: 0.3;
+  }
+}

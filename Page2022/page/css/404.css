@@ -1,0 +1,28 @@
+
+    #lost{
+        position: absolute;
+        top: 120px;
+        left: 33%;
+        color: white;
+        font-size: 40px;
+    }
+    #lost_p{
+        position: relative;
+        left: 0px;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        color:aquamarine;
+        
+    }
+    a:active{
+        color: chartreuse;
+        text-decoration: line-through;
+    }
+    #lost_p{
+        font-size: 100px;
+        text-align: center;
+        text-decoration: line-through;
+    }

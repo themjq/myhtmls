@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 设置网页缩放信息 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入本地css文件 -->
+    <link rel="stylesheet" href="css/frame.css">   
+
+    <link rel="stylesheet" href="css/encoured.css">
+    <!-- 网页标题 -->
+    <title>个人主页-爱好页</title>
+</head>
+<body>
+    <div class="html">
+        <!-- 顶部 -->
+        <header class="top">
+            <div class="top_detail">
+                <div class="top_top">
+                    <span class="logo" >XXX</span>
+					<img src="images/刀劈西瓜.jpg" >
+                    <p>爱好页</p>
+                </div>
+                <!-- 分割线 -->
+                <div class="partioner"></div>
+                <div class="navigation">
+                    <div class="top_buttom">
+                        <ul class="detail">
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="my.html">关于我</a></li>
+                            <li><a href="#" id="default" class="loader">爱好</a></li>
+                            <li><a href="motto.html">电影格言</a></li>
+                            <li><a href="books.html">爱看书籍</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 主页面内容区 -->
+        <div class="main">
+            <div class="left">
+                <div class="toggle">
+                        <h2>我的爱好</h2>
+                </div>
+                <div class="sidebar">
+                    <a href="#" id="a1" onclick="aClick('a1')">
+                        <img src="images/乒乓球.png" alt="抖音">
+                        <span>乒乓</span>
+                        <h3>球</h3>
+                    </a>
+                    <a href="#" id="a2" onclick="aClick('a2')">
+                        <img src="images/抖音.png" alt="抖音">
+                        <span>抖</span>
+                        <h3>音</h3>
+                    </a>
+                    <a href="#" id="a3" onclick="aClick('a3')">
+                        <img src="images/音乐.png" alt="音乐">
+                        <span>音</span>
+                        <h3>乐</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="center">
+                <div class="center_detail card2 a1">
+                    <div class="detail_top">
+                        <img src="images/乒乓球.png" alt="图片">
+                        <a href="#">乒乓球</a>
+                    </div>
+                    <div class="detail_center">
+                        <img src="images/乒乓球图片.jpg" alt="图片2">
+						
+                        <div class="detail_describe">
+                            <a href="#">乒乓球（table tennis），被称为中国的“国球”，是一种世界流行的球类体育项目。</a>
+                            <a href="#">乒乓球组织机构设有国际乒乓球联合会、亚洲乒乓球联盟、中国乒乓球协会。</a>
+                            <a href="#">乒乓球起源于英国。19世纪末，欧洲盛行网球运动，但由于受到场地和天气的限制，英国有些大学生便把网球移到室内，以餐桌为球台，书作球网，用羊皮纸做球拍，在餐桌上打来打去。</a>
+                            <a href="#">2017年，倪夏莲和桥本帆乃香的比赛中耗时94分钟，苦战七局获胜，打破了乒乓球比赛最长耗时的世界纪录。</a>
+                        </div>
+                    </div>
+                    <div class="detail_bottom">
+                        <button class="detail_button">查看更多</button>
+                    </div>
+                </div>
+				<div class="center_detail card2 a1">
+				    <div class="detail_top">
+				        <img src="images/乒乓球.png" alt="图片">
+				        <a href="#">乒乓球</a>
+				    </div>
+				    <div class="detail_center">
+				      
+						<img src="images/R-C.jpg" alt="图片2">
+				        <div class="detail_describe">
+				            <a href="#">乒乓球三剑客，也是我最喜欢的三位球员，可惜两位已经退役。</a>
+				            <a href="#">马龙：国乒现役球员，国乒一队队长，目前仍然在坚持，并且仍为对内主力。</a>
+				            <a href="#">许昕：左手直板，高度近视的他，打出了最具观赏性的比赛，可惜在东京奥运会混双比赛中遗憾夺银。</a>
+				            <a href="#">张继科：史上最快大满贯得主，但因打法凶悍，先天性腰伤早早退役，目前为一地乒乓球教练。</a>
+				        </div>
+				    </div>
+				    <div class="detail_bottom">
+				        <button class="detail_button">查看更多</button>
+				    </div>
+				</div>
+                <!-- 不同内容的card -->
+                <div class="center_detail card2 a2">
+                    <div class="detail_top">
+                        <img src="images/抖音.png" alt="图片">
+                        <a href="#">抖音</a>
+                    </div>
+                    <div class="detail_center">
+                        <img src="images/命运蕉响曲.jpg" alt="图片2">
+                        <div class="detail_describe">
+                            <a href="#">奥德彪拉香蕉</a>
+                            <a href="#">是金子总会发光</a>
+                            <a href="#">但大家</a>
+                            <a href="#">都是老铁</a>
+                        </div>
+                    </div>
+                    <div class="detail_bottom">
+                        <button class="detail_button">查看更多</button>
+                    </div>
+                </div>
+                <div class="center_detail card2 a2">
+                    <div class="detail_top">
+                        <img src="images/抖音.png" alt="图片">
+                        <a href="#">抖音</a>
+                    </div>
+                    <div class="detail_center">
+                        <img src="images/跑车.jpg" alt="图片2">
+                        <img src="images/外国女生.jpg" alt="图片2">
+                        <img src="images/爱抖.jpg" alt="图片2">
+                        <img src="images/风景照.jpg" alt="图片2">
+                    </div>
+                    <div class="detail_bottom">
+                        <button class="detail_button">查看更多</button>
+                    </div>
+                </div>
+                <div class="center_detail card2 a3">
+                    <div class="detail_top">
+                        <img src="images/音乐.png" alt="图片">
+                        <a href="#">音乐</a>
+                    </div>
+                    <div class="detail_center">
+                        <img src="musics/img/thephonenix.jpg" alt="图片2">
+                        <div class="detail_describe">
+                            <a href="#">歌手:falloutboy</a>
+                            <a href="#">发行日期:2007-07-27</a>
+                            <a href="#">Doesn't it fell like our time is running out</a>
+                            <a href="#">你难道感觉不到时光飞逝所剩无几</a>
+                        </div>
+                    </div>
+                    <div class="detail_bottom">
+                        <button class="detail_button" id="musicButton1" onclick="musicPlay('musicButton1')">播放</button>
+                    </div>
+                </div>
+                <!-- 音乐2 -->
+                <div class="center_detail card2 a3">
+                    <div class="detail_top">
+                        <img src="images/音乐.png" alt="图片">
+                        <a href="#">音乐</a>
+                    </div>
+                    <div class="detail_center">
+                        <img src="musics/img/summertimesadness.jpg" alt="图片2">
+                        <div class="detail_describe">
+                            <a href="#">歌名：summertimessadness</a>
+                            <a href="#">作者：打雷姐</a>
+                            <a href="#">I'm felling electric tonight</a>
+                            <a href="#">我今晚如触电一样兴奋</a>
+                        </div>
+                    </div>
+                    <div class="detail_bottom">
+                        <button class="detail_button" id="musicButton2" onclick="musicPlay('musicButton2')">播放</button>
+                    </div>
+                </div>
+                <!-- 音乐3 -->
+                <div class="center_detail card2 a3">
+                    <div class="detail_top">
+                        <img src="images/音乐.png" alt="图片">
+                        <a href="#">音乐</a>
+                    </div>
+                    <div class="detail_center">
+                        <img src="musics/img/fall out boy.jpg" alt="图片2">
+                        <div class="detail_describe">
+                            <a href="#">歌名：Centuries</a>
+                            <a href="#">演唱:Fall Out Boy</a>
+                            <a href="#">But you remember me</a>
+                            <a href="#">但你将会将我铭记</a>
+                        </div>
+                    </div>
+                    <div class="detail_bottom">
+                        <button class="detail_button" id="musicButton3" onclick="musicPlay('musicButton3')">播放</button>
+                    </div>
+                    <audio id="musicAudio"></audio><!--默认隐藏-->
+                </div>
+                <script  type="text/javascript">
+                    let musicAudio=document.getElementById('musicAudio');
+                    function musicPlay(buttonId){
+                        console.log('按钮被点击,按钮ID'+buttonId);
+                        var musicButton=document.getElementById(buttonId);
+                        if(musicButton.textContent==="播放"||musicButton.textContent==="继续"){
+                            if(musicButton.textContent==="播放"){
+                                if(buttonId==="musicButton1"){
+                                    musicAudio.src="musics/thephoenix.mp3";
+                                    var button=document.getElementById("musicButton2");
+                                    button.textContent="播放";
+                                    var button=document.getElementById("musicButton3");
+                                    button.textContent="播放";
+                                }
+                                if(buttonId==="musicButton2"){
+                                    musicAudio.src="musics/summertimesadness.mp3";
+                                    var button=document.getElementById("musicButton1");
+                                    button.textContent="播放";
+                                    var button=document.getElementById("musicButton3");
+                                    button.textContent="播放";
+                                }
+                                if(buttonId==="musicButton3"){
+                                    musicAudio.src="musics/fall out boy.mp3";
+                                    var button=document.getElementById("musicButton1");
+                                    button.textContent="播放";
+                                    var button=document.getElementById("musicButton2");
+                                    button.textContent="播放";
+                                }
+                            }
+                            musicAudio.play();
+                            musicButton.textContent='暂停';
+                        }else{
+                            musicAudio.pause();  
+                            musicButton.textContent='继续';
+                        }
+                    }
+                </script>
+            </div>
+            <!-- 点击左侧栏切换中间内容 -->
+            <script  type="text/javascript">
+                function aClick(aId){
+                    console.log('按钮被点击,按钮ID'+aId);
+                    // 获取所有中间的详细卡片
+                    centerCards=document.getElementsByClassName('center_detail');
+                    for(var i=0;i<centerCards.length;i++){
+                        if(centerCards[i].classList.contains(aId))
+                            centerCards[i].style.display='block';
+                            else centerCards[i].style.display='none';
+                    }
+                }
+            </script>
+            
+        </div>
+    </div>
+    <!-- 版权信息 -->
+    <div class="copyrights">
+        <p class="footer">Copyright &copy; 2021.Company name All rights reserved.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 设置网页缩放信息 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入本地css文件 -->
+    <link rel="stylesheet" href="css/frame.css">   
+    <link rel="stylesheet" href="css/enamoured.css">
+    <!-- 网页标题 -->
+    <title>个人爱好</title>
+</head>
+<body>
+    <div class="html">
+        <!-- 顶部 -->
+        <header class="top">
+            <div class="top_detail">
+                <div class="top_top">
+                    <span class="logo">XXX</span>
+                    <p>个人爱好</p>
+                </div>
+                <!-- 分割线 -->
+                <div class="partioner"></div>
+                <div class="navigation">
+                    <div class="top_buttom">
+                        <ul class="detail">
+                            <li><a href="index.html">主页</a></li>
+                            <li><a href="me.html">个人简介</a></li>
+                            <li><a href="#" id="default" class="loader">个人爱好</a></li>
+                            <li><a href="score.html">个人成绩</a></li>
+                            <li><a href="evaluation.html">自我评价</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 主页面内容区 -->
+        <div class="main">
+            <div class="toggle">
+                <p>我的爱好:<span>打篮球</span></p>
+            </div>
+            <div class="bottom">
+                <video id="myVideo1" class="divCartoon"  onclick="play1()" ondblclick="pause1()">  
+                    <source src="videos/球星必杀技欧文.mp4" type="video/mp4">  
+                    Your browser does not support the video tag.  
+                </video> 
+                <p class="description">凯里·欧文，1992年出生于美国加利福尼亚州，2011年，欧文作为选秀状元被克里夫兰骑士队选中，正式进入NBA。进攻端，欧文以其出色的运球、突破和三分投射能力著称；防守端，他凭借敏锐的判断和速度，成为了球队的外线防守核心。2016年，欧文携手勒布朗·詹姆斯，帮助克里夫兰骑士队夺得NBA总冠军。</p>
+                <p class="tips">单击播放,双击暂停</p>
+                <script type="text/javascript">  
+                    var video1=document.getElementById('myVideo1')
+                    function play1(){
+                        video1.play();
+                    }
+                    function pause1(){
+                        video1.pause();
+                    }
+                </script> 
+                
+            </div>
+            <div class="bottom">
+                <video id="myVideo2" class="divCartoon"  onclick="play2()" ondblclick="pause2()">  
+                    <source src="videos/球星必杀技欧文.mp4" type="video/mp4">  
+                    Your browser does not support the video tag.  
+                </video> 
+                <p class="description">凯里·欧文，1992年出生于美国加利福尼亚州，2011年，欧文作为选秀状元被克里夫兰骑士队选中，正式进入NBA。进攻端，欧文以其出色的运球、突破和三分投射能力著称；防守端，他凭借敏锐的判断和速度，成为了球队的外线防守核心。2016年，欧文携手勒布朗·詹姆斯，帮助克里夫兰骑士队夺得NBA总冠军。</p>
+                <p class="tips">单击播放,双击暂停</p>
+                <script type="text/javascript">  
+                    var video2=document.getElementById('myVideo2')
+                    function play2(){
+                        video2.play();
+                    }
+                    function pause2(){
+                        video2.pause();
+                    }
+                </script> 
+            </div>
+            <div class="bottom">
+                <video id="myVideo3" class="divCartoon"  onclick="play3()" ondblclick="pause3()">  
+                    <source src="videos/球星必杀技欧文.mp4" type="video/mp4">  
+                    Your browser does not support the video tag.  
+                </video> 
+                <p class="description">凯里·欧文，1992年出生于美国加利福尼亚州，2011年，欧文作为选秀状元被克里夫兰骑士队选中，正式进入NBA。进攻端，欧文以其出色的运球、突破和三分投射能力著称；防守端，他凭借敏锐的判断和速度，成为了球队的外线防守核心。2016年，欧文携手勒布朗·詹姆斯，帮助克里夫兰骑士队夺得NBA总冠军。</p>
+                <p class="tips">单击播放,双击暂停</p>
+                <script type="text/javascript">  
+                    var video3=document.getElementById('myVideo3')
+                    function play3(){
+                        video3.play();
+                    }
+                    function pause3(){
+                        video3.pause();
+                    }
+                </script> 
+            </div>
+        </div>
+    </div>
+    <!-- 版权信息 -->
+    <div class="copyrights">
+        <p class="footer">Copyright &copy; 2021.Company name All rights reserved.</p>
+    </div>
+</body>
+</html>

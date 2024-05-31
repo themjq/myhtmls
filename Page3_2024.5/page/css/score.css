@@ -1,0 +1,65 @@
+.main{
+    padding-top: 25px;
+    flex-wrap: wrap; /* 允许子元素换行 */
+    padding-bottom: 75px;
+    max-height: 1000px;
+    overflow-y: auto; /* 当内容超出容器时，显示垂直滚动条 */ 
+}
+.main::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.main::-webkit-scrollbar-thumb {
+    background: whitesmoke;
+    border-radius: 5px;
+}
+.main::-webkit-scrollbar-track {
+    background-color: rgba(26, 25, 24, 0.6);
+    border: 1px solid #ccc;
+}
+table{
+    background-color: rgba(26, 25, 24, 0.8);
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+    border-radius: 15px;
+    color: antiquewhite;
+}
+th{
+    background-color: rgba(26, 25, 24, 0.9);
+}
+th,tr,td{
+    padding: 15px;
+    transition: all 0.5s;
+}
+tr:nth-child(2n) td{
+    background-color: #282828;
+}
+td:hover{
+    color: darkgrey;
+}
+td:active{
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

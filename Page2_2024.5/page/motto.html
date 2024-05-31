@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 设置网页缩放信息 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入本地css文件 -->
+    <link rel="stylesheet" href="css/frame.css">   
+    <link rel="stylesheet" href="css/motto.css"> 
+    <!-- 网页标题 -->
+    <title>格言</title>
+</head>
+<body>
+    <div class="html">
+        <!-- 顶部 -->
+        <header class="top">
+            <div class="top_detail">
+                <div class="top_top">
+                    <span class="logo">XXX</span>
+                    <!-- Banner条 -->
+                    <div class="navigation">
+                        <div class="top_buttom">
+                            <ul class="detail">
+                                <li><a href="index.html">首页</a></li>
+                                <li><a href="course.html">课程</a></li>
+                                <li><a href="daily.html">日常</a></li>
+                                <li><a href="enamoured.html">爱好</a></li>
+                                <li><a href="#" id="default">格言</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 分割线 -->
+                <div class="partioner"></div>
+            </div>
+        </header>
+        <!-- 主页面内容区 -->
+        <div class="main">
+            <div class="leftPart">
+                <img src="images/myJpg.jpg" class="myImg">
+                <p class="name">XXX</p>
+                <div class="detail">
+                    <p><img src="images/性别.png"><span>男</span></p>
+                    <p><img src="images/籍贯.png"><span>河南省XX市</span></p>
+                    <p><img src="images/爱好.png"><span>运动、音乐、游戏</span></p>
+                    <p><img src="images/学历.png"><span>本科</span></p>
+                    <p><img src="images/格言.png"><span>青春是那么美好,唯一的缺点就是消失的太快。人生又何尝不是如此呢?</span></p>
+                </div>
+            </div>
+            <div class="rightPart" id="rightPart">
+                <div class="card2">
+                    <p>青春是那么美好,唯一的缺点就是消失的太快。</p>
+                    <p>人生又何尝不是如此呢?</p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">  
+            const rightPart=document.getElementById('rightPart');
+            const mottos = [  
+                    "廉价的自尊、粗劣的傲气，无论哪个后生小辈都很重视这些东西。 ——立花纹 出自 狼与香辛料",  
+                    "自己不经意的一句话，触动了别人的心。 ——酷儿 出自 恋如雨止",  
+                    "活下去的意志是最强的力量！ ——hitokoto 出自 浪客剑心",  
+                    "世界上所有的不利状况都是因为当事者的能力不足 ——魑星辰 出自 东京喰种",  
+                    "我开始阅读，因为生活否定了我，而阅读却好心的肯定了我的爱好和我的个性。 ——hongze_ 出自 网络摘抄",  
+                    "优秀的幼苗应该有与之相称的土壤，贫瘠的土地是无法结出丰盛果实的。 ——席霖 出自 排球少年",  
+                    "这里的一切都有始有终，却能容纳所有的不期而遇和久别重逢。 ——卑微网友. 出自 全球高考",  
+                    "嘴上说着考名校，手里打着游戏，你是在和谁开玩笑。 ——边妤仙 出自 原创",  
+                    "人生当苦无妨，良人当归极好。 ——徐凤年 出自 雪中悍刀行",  
+                    "多想再次回到那个夏天，那满是柠檬味气泡水和回忆的季节，漫天星河，熠熠生辉，就好像再也不见的你，历历如初。 ——七夏浅笑 出自 原创",  
+                    "你逆光而来，配得上世间所有的美好。 ——契约 出自 网络",  
+                    "电脑的处理器总比执行单元小。 ——licorp 出自 脑子",  
+                    "日日思君不见君，共饮长江水。 ——a632079 出自 卜算子·我住长江头",  
+                    "暴力出奇迹，骗分过样例。 ——Mockaven 出自 OIer",  
+                    "萧萧梧叶送寒声，江上秋风动客情。 ——a632079 出自 夜书所见",  
+                    "现实尚未支离破碎，是因为梦想还在苦苦支撑。 ——机智的狐狸菌 出自 半泽直树",  
+                    "生当复来归，死当长相思。 ——qwqbear 出自 留别妻",  
+                    "绕远的路，总能看见更美的风景。 ——yiming yue 出自 洛谷",  
+                    "山一程，水一程，身向榆关那畔行，夜深千帐灯。 ——a632079 出自 长相思·山一程",  
+                    "棠梨换暮雪。 ——鹤空流乂 出自 源初幻想",  
+                    "愿有朝一日与你见面还能释放温暖拥你入怀。 ——橘子_ORANGE 出自 境界的彼方",  
+                    "我孤注一掷的勇气，与无法预料的未来，统统交到了你手中。那从这一刻起，拜托你负责照料好手中紧握的我的一切。——我负责爱你和更加爱你。 ——Muzi.言寺 出自 他们俩",  
+                    "问灵十三载，等一不归人。 ——༄凉ོ࿆风࿆有࿆信ོ࿆࿐ 出自 魔道祖师",  
+                    "刚才车上看到一个人很像你，我瞬间愣住了，渴望是你，又害怕是你，直到看清不是你 ，我庆幸不是你又遗憾不是你。 ——茶褐 出自 关于那些从未提起过的情书",  
+                    "你跳不出这个世界，是因为你不知道这个世界有多大，一旦你知道了，你就超出了它。 ——a632079 出自 悟空传",  
+                    "精神生活的难是，辘辘饥肠算不上什么，比起目标迷茫的前景同时没有任何成就感。 ——混沌喵 出自 网络",  
+                    "故人西辞黄鹤楼，烟花三月下扬州。 ——a632079 出自 黄鹤楼送孟浩然之广陵",  
+                    "当我拔出第二把剑时，就是为了我所爱之人 ——kirito 出自 刀剑神域",  
+                    "生命太短，一秒钟都不留给让人不快的家伙。 ——酷儿 出自 网络",  
+                    "日月同辉时，诸神的黄昏。 ——Pusu 出自 大略" ,
+                    "梦里不觉秋已深，余情岂是为他人。 ——kazusa 出自 WHITE ALBUM2",  
+                    "我年轻，我傲娇。 ——Sai 出自 网络",  
+                    "只要世间有酒,我就喝不够! ——hbybyyang 出自 春宵苦短，少女前进吧！",  
+                    "为你，千千万万遍。 ——你有多久没有看过星星 出自 追风筝的人",  
+                    "有时我们尽力的让我们所虚拟出来的世界足够真实，可谁能保证我们的世界一定又是真实的呢？ ——Rene8028 出自 原创",  
+                    "（根据相关法律法规，相关内容已被屏蔽。） ——地球好闪亮 出自 （根据相关法律法规，相关内容已被屏蔽。）",  
+                    "你错了，第十四人，你把投在湖面的倒影错当成了夜空的繁星。 ——郭遥 出自 猎魔人Ⅲ：精灵之血",  
+                    "人只有在害怕的时候才会变勇敢。 ——yeye 出自 冰与火之歌",  
+                    "全世界会有两万个人是你一见到她就会爱上她的，可你也许一辈子都遇不到一个。 ——Barry 出自 龙族",  
+                    "虽然我的心脏停止跳动了，但它不会停止爱你。 ——残灯晓霜 出自 我死了",  
+                    "殺してあげる ——蒟蒻XZY 出自 緋色月下、狂咲ノ絶",  
+                    "男人只要去行动就好，做得到或做不到，女孩子会来告诉你的。 ——yeye 出自 四月是你的谎言",  
+                    "如期待奇迹发生，那唯有不停伸手去抓紧，去把握才行 ——麻婆豆腐 出自 秒速5厘米",  
+                    "走得再远，看得再细，终究会有这样那样的错过，不可能真正将风景看遍。 ——心软爸爸 出自 剑来",  
+                    "没有过多的幸运值，就得拥有个坚持不懈的斗志。 ——Pusu 出自 安世",  
+                    "吾尝终日不食，终夜不寝，以思无益，不如学也。 ——zhicheng2001 出自 论语",  
+                    "落幕时留下的轮廓和灰烬是留给这世界的一个吻和一份叹息。 ——D5xun 出自 互联网",  
+                    "每一次匆忙的路过，都是一次永久的离别。 ——咸鱼君ps 出自 咸鱼君ps",  
+                    "女生口中的「好人」首先百分之百是「怎样都好的人」的意思，再好也不过止于「方便好使的人」。也就是说，不管怎样都是没戏了。 ——hitokoto 出自 果然我的青春恋爱喜剧搞错了",  
+                    "凋零与不朽共存，这就是奇迹！ ——sir X 出自 永久的生命" 
+                ];
+            window.onload=function(){
+                for(var i=0;i<mottos.length;i++){
+                    var div=document.createElement('div');
+                    div.className='card2';
+                    var p=document.createElement('p');
+                    p.innerText=mottos[i];
+                    div.appendChild(p);
+                    rightPart.appendChild(div);
+                }
+
+            }
+            </script>
+    </div>
+    <!-- 版权信息 -->
+    <div class="copyrights">
+        <p class="footer">Copyright &copy; 2021.Company name All rights reserved.</p>
+    </div>
+</body>
+
+</html>

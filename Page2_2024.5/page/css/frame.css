@@ -1,0 +1,319 @@
+/* 清楚浏览器的默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    /*移除选中元素时，其周围的轮廓线*/
+    appearance: 0;
+    /*移除表单元素的默认样式*/
+    border: 0;
+    /*移除元素边框*/
+    text-decoration: none;
+    /*移除文本装饰效果(下划线等)*/
+    box-sizing: border-box;
+    /*设置元素的宽度和高度会包括内容、内边距和边框，但不包括外边距*/
+    user-select: none;  /*禁止用户选中*/
+}
+
+@font-face {
+    font-family: 'Pacifico';   /*字体名称*/
+    src: url('../font/Pacifico.ttf');       /*字体源文件*/
+}
+
+@font-face {
+    font-family: 'Douyin';  
+    src: url('../font/DouyinSansBold.otf'); 
+}
+@font-face {
+    font-family: 'ShaYu'; 
+    src: url('../font/ShaYu.ttf');   
+}
+.html{
+    position: relative;
+    left: 0;
+    right: 0;
+    min-width: 1400px;
+    height: auto;
+    min-height: 100%;
+    margin: 0 auto;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    height: 100%;    /*设置宽度以保证footer居于页面底部 (.html和.main中也要设置(页面中要保证充满100%height))*/
+    min-height: 100%;
+    /* background-image: url("../images/background.jpg"); */
+    background-color: #f2f4f7;
+    background-attachment:fixed;  /*图片滚动形式:静止*/
+    background-size: 100%;
+    z-index: 0;
+}
+/* 顶部 */
+.html{
+    margin: 0 auto;   /*重要，元素居中缩放*/
+    padding-bottom: 200px;
+}
+.top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+}
+.top .top_detail{
+    width: 1300px;
+    margin: 0 auto;
+}
+.top_top{
+    display: flex;  /*父类设置flex布局,使子类可以在一行内存在*/
+    width: 100%;
+}
+ /* logo */
+.top_top .logo{
+    font-family: 'Pacifico';
+    font-size: 2rem;
+    line-height: 1.1;
+    margin-left: 25px;
+    letter-spacing:2px;  /*字间距*/
+    margin-top: 10px;
+    padding-bottom: 12px;
+}
+.top .navigation{
+    margin-left: 50px;
+    font-size: 30px;
+}
+.top .partioner{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: black;
+}
+.top .top_buttom{
+    margin-top: 8px;
+    width: 100%;
+    height: 25px;
+}
+.top .top_buttom ul{
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+}
+.top .top_buttom ul li{
+    padding: 1px 5px;
+    margin: 0px 10px 1px 10px;
+    list-style-type:none;  /*去除前面的圆点*/
+}
+.top .top_buttom ul li:hover {
+    border-bottom:2px solid black;
+}
+.top .top_buttom ul li a{
+    color: #7a7374;
+    transition: all 0.5s;
+}
+.top .top_buttom ul li a:hover{
+    font-weight: bolder;
+    color:  #171717;
+    margin: 0 5px;
+}
+
+/*default 默认选中页面*/
+#default{
+    color: #171717;
+    font-weight: bolder;
+}
+/* 主页面内容区域 */
+.main{
+    position: relative;
+    top: 50px;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+}
+
+/*侧边栏*/
+.leftPart{
+    width: 300px;
+    height: 72vh;
+    min-height: 720px;  
+    background-color: rgba(26, 25, 24, 0.6);
+    border-radius: 15px;
+    color: #f0f0f0;
+    text-align: center;
+    font-family: inherit;
+    z-index: 1;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    transition: all 0.5s;
+  }
+  .leftPart:hover{
+    background-color: #813c85;
+    border: 1px solid black;
+  }
+  .leftPart .myImg {
+    width: 85px;
+    height: 85px;
+    border: 2px solid #f0f0f0;
+    border-radius: 50%;
+    transition: all 0.5s;
+    position: relative;
+    top: 85px;
+   }
+   .leftPart .myImg:hover{
+    width: 125px;
+    height: 125px;
+   }
+   .leftPart .name{
+    font-size: 35px;
+    position: relative;
+    transition: all 0.5s;
+    top: 125px;
+   }
+  .leftPart .detail{
+    position: relative;
+    top: 150px;
+    left: 25px;
+    width: 250px;
+    text-align: left;
+  }
+  .leftPart .detail p{
+    margin: 15px;
+    border-bottom: 2px solid #ffffff;
+    transition: all 0.5s;
+  }
+  .leftPart .detail img{
+    width: 32px;
+    height: 32px;
+  }
+  
+  .leftPart .detail span{
+    margin-left: 12px;
+    font-size: 22px;
+    font-family: ShaYu;
+  }
+  .leftPart .detail p:hover{
+    margin-left: 25px;
+  }      
+/*右侧内容区域*/
+.rightPart{
+    width: 70%;
+    height: 72vh;
+    min-height: 720px;  
+    background-color: rgba(26, 25, 24, 0.6);
+    border-radius: 15px;
+    color: #f0f0f0;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    top: 50px;
+    transition: all 0.5s;
+    margin-left: 125px;
+    display: flex;
+}
+.rightPart:hover{
+  background-color: #47484c;
+  border: 1px solid black;
+}
+.rightPart::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.rightPart::-webkit-scrollbar-thumb {
+    background: whitesmoke;
+    border-radius: 5px;
+}
+.rightPart::-webkit-scrollbar-track {
+    background-color: rgba(26, 25, 24, 0.6);
+    border: 1px solid #ccc;
+}
+/* 版权部分 */
+.copyrights {
+    border-top: 1px dashed rgba(255, 255, 255, 0.1);
+    background-color: #1f1f1f;
+    position: relative;
+    min-width: 1400px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.copyrights .footer{
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+/*card*/
+.card{
+    border: 1px solid #000000;
+    transition: all 0.5s;
+}
+.card:hover{
+    border:1px solid #4d58b5;
+    margin-top: 20px;
+}
+.card:active{
+    margin-top: 50px;
+}
+.card2{
+    border: 1px solid #000000;
+    transition: all 0.5s;
+}
+.card2:hover{
+    border:1px solid white;
+}
+.card2:active{
+    border:1px solid whitesmoke;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,191 @@
+
+
+/* left内 */
+.rightTop{
+    width: 100%;
+    height: 100px;
+    font-family:ShaYu;
+}
+.toggle{
+    align-items: center;
+    height: 75px;
+    width: 225px;
+}
+.toggle h2{
+    display: block;
+    margin-left: 15px;
+    margin-top: 20px;
+    color:azure;
+    transition: all 0.5s;
+    cursor:pointer;
+}
+.toggle h2:hover{
+    font-size: 28px;
+}
+.toggle h2:active{
+    font-size: 25px;
+    color: antiquewhite;
+}
+.topBar{
+    background-color: #1b1b1b;
+    display: flex;
+    flex-direction: row;   /*子类元素排列方式*/
+    border-radius: 15px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.topBar:hover{
+    box-shadow: none;
+}
+.topBar a{
+    display: flex;
+    align-items: center;
+    color:whitesmoke;
+    height: 75px;
+    width: 75px;
+    position: relative;
+    margin-left: 15px;
+    border-left: 2px solid whitesmoke;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    transition: all 0.5s;
+}
+.topBar a span{
+    margin-left: 5px;
+}
+.topBar a:hover{
+    font-size: 22px;
+}
+.topBar a:active{
+    color: antiquewhite;
+    font-size: 18px;
+}
+
+
+/*下方数据*/
+.rightPart{
+    flex-wrap: wrap; /* 允许子元素换行 */
+    overflow-y: auto; /* 当内容超出容器时，显示垂直滚动条 */  
+}
+
+.center{
+    width: 98%;
+    margin-left: 2%;
+    font-family: ShaYu;
+}
+.center_detail{
+    border-radius: 25px;
+    width: 90%;
+    margin-left: 5%;
+    height: 235px;
+    margin-top: 25px;
+}
+.center_detail .detail_top{
+    padding-top: 5px;
+    width: 96%;
+    margin-left: 2%;
+    height: 35px;
+}
+.center_detail .detail_top a{
+    font-size:28px;
+    font-weight: bolder;
+    position: relative;
+    color: antiquewhite;
+    top: -5px;
+    transition: all 0.5s;
+}
+
+.center_detail .detail_center{
+    width: 90%;
+    margin-left: 5%;
+    height: 150px;
+    display: flex;
+}
+.center_detail .detail_center img{
+    margin-top: 15px;
+    margin-left: 75px;
+    width: 125px;
+    height: 125px;
+    border-radius: 6px;
+    overflow: hidden;
+    object-fit: cover;
+    transition: all 0.5s;  /*动画*/
+}
+
+.center_detail .detail_center .detail_describe{
+    width: 700px;
+    height: 125px;
+    margin-top: 18px;
+    margin-left: 15px;
+    font-family: ShaYu;
+    font-size: 15px;
+}
+.center_detail .detail_center .detail_describe a{
+    margin-left: 15px;
+    text-align: left;
+    display: block;
+    margin-top: 7px;
+    color:whitesmoke;
+    transition: all 0.5s;
+}
+.detail_describe a:hover{
+    padding-left: 20px;
+}
+.center_detail .detail_bottom{
+    width: 100%;
+    height: 45px;
+}
+.center_detail .detail_bottom button{
+    margin-left: 700px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff80;
+    text-shadow: none;  /*不让字体出现阴影*/
+    background: transparent;  /*背景透明*/
+    cursor: pointer;
+    border: 1px solid #ffffff80;
+    transition: 0.5s ease;
+    position: relative;
+    opacity: 0;
+}
+.center_detail:hover .detail_button{
+    opacity: 1;
+    margin-top: -20px;
+}
+.detail_button:active{
+    transform: scale(0.8);
+}
+
+
+
+/*视频播放*/
+
+#myVideo{
+    opacity: 0;
+    width: 800px;
+    height: 480px;
+    transition: all 0.5s;
+    border-top: 2px solid whitesmoke;
+    padding-bottom: 30px;
+}
+#videoDiv:hover{
+    height: 700px;
+}
+#videoDiv:hover #myVideo{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+

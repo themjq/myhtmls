@@ -1,0 +1,78 @@
+
+.main{
+    padding-bottom: 100px;
+}
+.main .toggle{
+    position: relative;
+    top: 25px;
+    text-align: center;
+    font-size: 55px;
+}
+.main .toggle p{
+    transition: all 0.5s;
+}
+.main .toggle p:hover{
+    color: aliceblue;
+}
+.toggle p span{
+    font-size: 45px;
+    position: relative;
+}
+
+
+/*下方视频区域*/
+.bottom{
+    width: 60%;
+    height: 500px;
+    position: relative;
+    background-color: black;
+    top: 35px;
+    border-radius: 25px;
+    left: 20%;
+    display: flex;
+    margin: 50px;
+    }
+.tips{
+    min-width: 150px;
+    height: 25px;
+    position: relative;
+    bottom: -455px;
+    right: 50px;
+    color: whitesmoke;
+}
+.bottom .description{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    top: 75px;
+    right: -50px;
+    font-size: 15px;
+    color: whitesmoke;
+    letter-spacing: 6px;
+}
+.bottom video{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 设置阴影 */  
+    margin: 0 auto; /* 设置外边距，使视频居中 */  
+    margin-left: 20%;
+    display: block; /* 设置为块级元素以便应用margin: auto;来居中 */
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

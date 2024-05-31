@@ -1,0 +1,48 @@
+.rightPart{
+    display: block;
+    overflow-y: auto; /* 当内容超出容器时，显示垂直滚动条 */ 
+    padding-bottom: 25px;
+}
+.rightPart div{
+    width: 90%;
+    min-height: 50px;
+    border-radius: 12px;
+    background-color: rgba(26, 25, 24, 0.6);
+    margin: 20px 0 0 60px;
+}
+.rightPart div p{
+    font-family: ShaYu;
+    font-size: 22px;
+    color: black;
+    transition: all 0.5s;
+}
+.rightPart div p:hover{
+    font-size: 24px;
+    color: aliceblue;
+}
+.rightPart div p:active{
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

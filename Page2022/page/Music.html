@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is Musicial</title>
+    <link rel="icon" href="./images/2rkeymjqmjl.png"/><!--网页图标-->
+    <link rel="stylesheet" type="text/css" href="css/frame.css"/><!--框架-->
+    <link rel="stylesheet" type="text/css" href="css/Music.css">
+</head>
+<body id="backg" >
+        <div id="My_title"> <p>欢迎来到</p><a href="index.html" id="go_index"><span>&nbsp2rkeymjqmjl! &nbsp&nbsp音乐欣赏</span></a><img src="./images/music.png" alt="music" id="icon"></div>
+        <hr size="5px">
+    <div id="Play">
+        <div id="backg_Music">
+            <img src="mp3/img/Told you so.jpg" id="musicImg">
+        </div>
+        <audio src="mp3/Christopher - Told You So.mp3" controls id="audio" style="display: none"></audio>
+        <div id="time_plan">
+            <p id="now_time"></p>
+            <input id="plan" value="0" type="range" min="0" max="100" step="0.1"  onchange="setplan()"/>
+            <p id="total_time" style="float: right;"></p>
+        </div>
+        <div class="operate">
+            <img src="mp3/img/pre.png" alt="pre" id="pre">
+            <img src="mp3/img/bofang.png" alt="bofang" id="bofang">
+            <img src="mp3/img/zhanting.png" alt="zhanting" id="zhanting" style="display: none;">
+            <img src="mp3/img/next.png" alt="next" id="next">
+            <div style="float: left;" id="volume_div">
+                <img src="mp3/img/volume.png" alt="volume" id="volume_img">
+                <input id="volume" value="0.75" type="range" min="0"max="1" step="0.1"  onchange="setVolume()"/>
+            </div>
+            <img src="mp3/img/mute.png" alt="mute" id="mute" style="display: none;">
+        </div>
+    </div>
+    <div class="Main_div">
+            <div class="mainWrap">
+                <div class="leftdiv">
+                    <ul class="menuUL">
+                        <li class="menuLi">
+                            <a href="#Play">
+                                正在播放
+                            </a>
+                        </li>
+                        <li class="menuLi">
+                            <a href="404.html" target="_blank">
+                                播放历史
+                            </a>
+                        </li>
+                        <li class="menuLi">
+                            <a href="#">
+                                我收藏的单曲
+                            </a>
+                        </li>
+                    </ul>
+                    			
+                </div>
+                <div class="mainBody">
+                    <table class="detail" >
+                        <tr>
+                          <th>歌曲</th>
+                          <th>演唱者</th>
+                          <th>专辑</th>
+                          <th>时长</th>
+                          <th>&nbsp</th>
+                        </tr>  
+                        <tr>
+                            <td>Told You So</td>
+                            <td>Christopher</td>
+                            <td>Told You So</td>
+                            <td>3:45</td>
+                            <td id="play1" class="start">播放</td>
+                        </tr>
+                        <tr>
+                            <td>Numb</td>
+                            <td>LINKIN&nbspPARK</td>
+                            <td>Meteora</td>
+                            <td>3:07</td>
+                            <td id="play2" class="start">播放</td>
+                        </tr>
+                          <td>纸短情长</td>
+                          <td>花粥</td>
+                          <td>纸短情长</td>
+                          <td>3:01</td>
+                          <td id="play3" class="start">播放</td>
+                        </tr>
+                        <tr>
+                            <td>猜不透</td>
+                            <td>凌子</td>
+                            <td>猜不透(live)</td>
+                            <td>3:52</td>
+                            <td id="play4" class="start">播放</td>
+                        </tr>
+                        <tr>
+                            <td>退后</td>
+                            <td>尹婕</td>
+                            <td>格格不入</td>
+                            <td>3:20</td>
+                            <td id="play5" class="start">播放</td>
+                          </tr>
+                        <tr>
+                    </table>
+                </div>
+        </div>
+    <footer>
+        <p>Made&nbsp&nbspBy&nbsp&nbsp2rkeymjqmjl</p>
+    </footer>
+    <div id="setting">
+		<ul>
+			<li id="li_bound1"><a href="#">⌆</a>
+            </li>
+			<li id="li_bound2"><a href="#"><img  id="img_bound" src="images/Gear.png" alt="Gear" ></a>
+				<ul>
+					<li><a href="Wallpaper.html">壁纸</a></li>
+					<li><a href="Music.html">音乐</a></li>
+					<li><a href="My.html">My</a></li>
+					<li><a href="index.html">主页</a></li>
+				</ul>
+			</li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="js/Music.js"></script>
+</body>
+</html>

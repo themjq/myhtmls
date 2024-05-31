@@ -1,0 +1,101 @@
+#me_p{
+    position: absolute;
+    top: 1%;
+    font-size: 75px;
+    left: 10%;
+    color: aliceblue;   
+}
+#me_p2{
+    position: absolute;
+    top: 8%;
+    font-size: 50px;
+    left: 40%;
+    color: aliceblue;
+}
+.cards {
+    transition: 0.5s;
+}
+.cards:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.cards:active {
+    transform: scale(0.85);
+    transition: 0.5s;
+}
+#My_img_div{
+    position: absolute;
+    margin-top: 13%;
+    left: 13%;
+}
+#My_img1{
+    width:300px;
+    background: rgb(0 0 0 / 25%);
+    border-radius: 50%;
+}
+#My_img2{
+    width:300px;
+    background: rgb(0 0 0 / 25%);
+    border-radius: 50%;
+}
+#Signature{
+    width: 500px;
+    height: 100px;
+    background: rgb(0 0 0 / 25%);
+    position: absolute;
+    margin-top: 35%;
+    left: 7%;
+    font-family: '楷体';
+    font-size: 25px;
+}
+#Signature p{
+    
+    float: left;
+    display: block;
+    margin-left: 5px;
+    text-align: center;
+    margin-top:20px;
+    color: aliceblue;
+}
+#Signature p:hover{
+    transform:scale(1.3);
+    transition: 0.5s;
+    color: aqua;
+}
+#monologue{
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    margin-top: 8%;
+    right: 1%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 2%;
+}
+#monologue #part1{
+    margin-top: 50px;
+    margin-left: 75px;
+}
+#monologue span{
+    left: 45%;
+    position: absolute;
+    transition: 0.5s;
+}
+#monologue span:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+#monologue p{
+    font-size: 20px;
+    color: white;
+    font-family: '楷体';
+    display: block;
+    transition: 0.5s;
+    text-align: center;
+    float: left;
+    margin-top: 7.5px;
+}
+#monologue p:hover{
+    transform:scale(1.2);
+    transition: 0.5s;
+}

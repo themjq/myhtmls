@@ -1,0 +1,57 @@
+.main{
+  display: flex;
+}
+.main img{
+  width: 334px;
+  height: 500px;
+  border-radius: 15px;
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+.mainDetail{
+  background-color: rgba(26, 25, 24, 0.8);
+  position: relative;
+  top: 100px;
+  left: 150px;
+  width: 875px;
+  height: 500px;
+}
+.mainDetail .detailTop{
+  font-size: 35px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: blanchedalmond;
+}
+.mainDetail p{
+  width: 75%;
+  margin-left: 10%;
+  margin-bottom: 20px;
+  color: ghostwhite;
+  font-size: 28px;
+  letter-spacing:5px;/*字体间距*/
+  transition: all 0.5s;
+}
+.mainDetail p:hover{
+  color:#2cb5a0;
+}
+.mainDetail p span{
+  transition: all 0.5s;
+  font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

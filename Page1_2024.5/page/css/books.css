@@ -1,0 +1,90 @@
+.main{
+    background-color: rgba(26, 25, 24, 0.6);
+    margin: 20px auto auto auto;
+}
+.top_detail .top_top img{
+	margin-top: 15px;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;}
+.main .books{
+    width: 90%;
+    margin-left: 5%;
+    background-color: #1b1b1b;
+    display: grid;  /*采用grid布局*/
+    grid-template-columns: 30% 30% 30%;  
+    row-gap: 75px;
+    column-gap: 5%;
+}
+.books .book{
+    color: azure;
+}
+.bookShort{
+    width:100%;
+    height: 175px;
+    display: flex;
+}
+.bookShort h2{
+    font-size: 18px;
+    width: 175px;
+    margin: 15px;
+}
+.bookShort h2 span{
+    font-size: 16px;
+    margin-left: 5px;
+}
+.bookShort h2:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.bookShort .bookImg{
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.bookDetail{
+    margin: 15px;
+}
+.bookDetail .bookDescription{
+    background-color: #1d1b1d;
+    border-radius: 5px;
+}
+.bookDetail .bookDescription strong{
+    position: relative;
+    left: 350px;
+    transition: all 0.5s;
+}
+.bookDetail .bookDescription strong:hover{
+    color: rebeccapurple;
+}
+.bookDetail .bookDescription strong:active{
+    transition: all 0.1s;
+    color: crimson;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

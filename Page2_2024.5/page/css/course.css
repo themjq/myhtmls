@@ -1,0 +1,71 @@
+.rightPart{
+  flex-wrap: wrap; /* 允许子元素换行 */
+  overflow-y: auto; /* 当内容超出容器时，显示垂直滚动条 */  
+}
+.rightPart  .course{
+  min-width: 350px;
+  height: 225px;
+  border-radius: 12px;
+  background-color: azure;
+  margin: 40px 0 0 60px;
+  float: left;
+  font-family: ShaYu;
+}
+.rightPart .course img{
+  margin-top: 5px;
+  border-radius: 12px;
+  width: 240px;
+  height: 130px;
+  
+}
+.rightPart .course .p1{
+  
+  color: black;
+  font-size: 22px;
+  transition: all 0.5s;
+}
+.rightPart .course .p1:hover{
+  font-size: 23px;
+}
+.rightPart .course .p1:active{
+  font-size: 18px;
+}
+.detailDiv{
+  color: black;
+  font-size: 16px;
+}
+.detailDiv .d2,
+.detailDiv .d3{
+  text-align: right;
+  margin-right: 15px; 
+  transition: all 0.5s;
+}
+.detailDiv .d2:hover,
+.detailDiv .d3:hover{
+  color: royalblue;
+}
+.course:hover .showMore{
+  opacity: 1;
+  bottom: 25px;
+}
+.showMore{
+  width: 75px;
+  height: 25px;
+  background-color: #f0ffff;
+  border-radius: 5px;
+  border: 1px solid black;
+  transition: all 0.5s;
+  color: black;
+  font-size: 16px;
+  font-family: ShaYu;
+  opacity: 0;
+  position: relative;
+  bottom: 5px;
+}
+.showMore:hover{
+  border: 1px solid whitesmoke;
+  transform: scale(1.1);
+}
+.showMore:active{
+  transform: scale(0.9);
+}

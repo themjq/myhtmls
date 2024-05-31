@@ -1,0 +1,35 @@
+.sentences{
+    width: 90%;
+    padding-bottom: 50px;
+    position: relative;
+    top: 25px;
+    left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sentence{
+    margin-left: 15px;
+    margin-top: 25px;
+    width: 30%;
+    min-height: 75px;
+    color: beige;
+    text-align: center;
+    margin: 20px auto; 
+}
+.sentence p{
+    margin: 20px auto;  
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

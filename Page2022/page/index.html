@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is 2rkeymjqmjl</title>
+    <link rel="icon" href="./images/2rkeymjqmjl.png"/><!--网页图标-->
+    <link rel="stylesheet" type="text/css" href="css/frame.css"/><!--框架-->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script><!--每日诗词-->
+</head>
+<body id="backg">
+        <div id="My_title"> <p>欢迎来到</p><span>&nbsp2rkeymjqmjl!&nbsp首页</span></div>
+        <a href="Calender.html">
+            <div id="time_div" class="cards"><!--时间-->
+                <canvas id="clock"></canvas>
+                <div id="datetime"></div>
+            </div>
+        </a>
+        <form  target="_blank" method="get" action="https://www.baidu.com/s" class="Search"><!--搜索框-->
+            <input type="text" placeholder="搜点什么吧！" name="word" class="text">
+            <input type="submit"  value="" class="bot_search">
+        </form>
+        <div id="div_cards">
+            <a href="https://www.bilibili.com/" target="_blank" >
+                <div class="card cards">
+                    <img src="./images/bilibili.png" alt="bilibili" id="icon">
+                    <span class="link-name" style="font-size: 1.1rem;">BILIBILI</span>
+                </div>
+            </a>
+            <a href="https://www.zhihu.com/" target="_blank" >
+                <div class="card cards">
+                    <img src="./images/zhihu.png" alt="zhihu" id="icon">
+                    <span class="link-name" style="font-size: 1.1rem;">知乎</span>
+                </div>
+            </a>
+            <a href="https://moyuduck.com/" target="_blank" >
+                <div class="card cards">
+                    <img src="./images/muoyuya.png" alt="muoyuya" id="icon">
+                    <span class="link-name" style="font-size: 1.1rem;">摸鱼鸭</span>
+                </div>
+            </a>
+            <a href="https://fanyi.baidu.com/?aldtype=16047#auto/zh" target="_blank" >
+                <div class="card cards">
+                    <img src="./images/baidufanyi.png" alt="zhihu" id="icon">
+                    <span class="link-name" style="font-size: 1.1rem;">百度翻译</span>
+                </div>
+            </a>
+            <a href="https://yanetflix.com/" target="_blank" >
+                <div class="card cards">
+                    <img src="./images/yanaifei.png" alt="zhihu" id="icon">
+                    <span class="link-name" style="font-size: 1.1rem;">鸭奈飞</span>
+                </div>
+            </a>
+            <a href="http://i.mooc.chaoxing.com/space/index?t=1637492621983" target="_blank" >
+                <div class="card cards">
+                    <img src="./images/xuexitong.png" alt="zhihu" id="icon">
+                    <span class="link-name" style="font-size: 1.1rem;">学习通</span>
+                </div>
+            </a>
+            <a href="Music.html" target="_blank" >
+                <div class="card cards">
+                    <img src="./images/music.png" alt="music" id="icon">
+                    <span class="link-name" style="font-size: 1.1rem;">听歌</span>
+                </div>
+            </a>
+            <a href="Wallpaper.html" target="_blank" >
+                <div class="card cards">
+                    <img src="./images/pic.png" alt="pic" id="icon">
+                    <span class="link-name" style="font-size: 1.1rem;">壁纸欣赏</span>
+                </div>
+            </a>
+            <a href="Websites.html" target="_blank" >
+                <div class="card cards">
+                    <img src="./images/web.png" alt="web" id="icon">
+                    <span class="link-name" style="font-size: 1.1rem;">网址合集</span>
+                </div>
+            </a>
+        </div>
+        <div id="poem_div" class=" cards"><!--今日诗词-->
+            <span id="jinrishici-sentence">正在加载今日诗词....</span>
+            <p id="info"></p>
+            <script type="text/javascript">
+                var info=document.querySelector("#info");
+                jinrishici.load(function(result) {
+                    info.innerHTML='——'+result.data.origin.dynasty+' '
+                    + result.data.origin.author + '《' + result.data.origin.title + '》'
+                }); 
+            </script>
+        </div>
+        <div id="timing_div" class="cards">
+            <p id="title_p">记-时</p>
+            <div class="item">
+                <div class="date-text">本分已经度过了&nbsp;<span id="SEC"></span>&nbsp;秒</div>
+                <div class="container">
+                    <div class="progress" id="progress_sec"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="date-text">本时已经度过了&nbsp;<span id="MINU"></span>&nbsp;分</div>
+                <div class="container">
+                    <div class="progress" id="progress_minu"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="date-text">本日已经度过了&nbsp;<span id="HOUR"></span>&nbsp;时</div>
+                <div class="container">
+                    <div class="progress" id="progress_hour"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="date-text">本周已经度过了&nbsp;<span id="DAY"></span>&nbsp;天</div>
+                <div class="container">
+                    <div class="progress" id="progress_day"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="date-text">本月已经度过了&nbsp;<span id="DAY2"></span>&nbsp;周</div>
+                <div class="container">
+                    <div class="progress" id="progress_day2"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="date-text">本年已经度过了&nbsp;<span id="MONTH"></span>&nbsp;月</div>
+                <div class="container">
+                    <div class="progress" id="progress_month"></div>
+                </div>
+            </div>
+        </div>
+        <a href="My.html" target="_blank"><img id="My_img" class="cards" src="images/2rkeymjqmjl.png" alt="2rkeymjqmjl"></a>
+        <ul  id="back_ul" ><!--壁纸-->
+            <li><img src="./images/background.jpg" alt="background" id="back_img"></li>
+            <li><img src="./images/1.jpg" alt="1" id="back_img"></li>
+            <li><img src="./images/2.jpg" alt="2" id="back_img"></li>
+            <li><img src="./images/3.jpg" alt="3" id="back_img"></li>
+            <li><img src="./images/4.jpg" alt="4" id="back_img"></li>
+            <li><img src="./images/5.jpg" alt="5" id="back_img"></li>
+            <li><img src="./images/6.jpg" alt="6" id="back_img"></li>
+            <li><img src="./images/7.jpg" alt="7" id="back_img"></li>
+            <li><img src="./images/8.jpg" alt="8" id="back_img"></li>
+            <li><img src="./images/9.jpg" alt="9" id="back_img"></li>
+            <li><img src="./images/10.jpg" alt="10" id="back_img"></li>
+            <li><img src="./images/11.jpg" alt="11" id="back_img"></li>
+        </ul>
+    <footer>
+        <p>Made&nbsp&nbspBy&nbsp&nbsp2rkeymjqmjl</p>
+    </footer>
+<div id="setting">
+		<ul>
+			<li id="li_bound1"><a href="#">⌆</a>
+            </li>
+			<li id="li_bound2"><a href="#"><img  id="img_bound" src="images/Gear.png" alt="Gear" ></a>
+				<ul>
+					<li><a href="Wallpaper.html">壁纸</a>
+                        <input type="button" id="back_botton" value="展开" >   
+                        <input type="button" id="back_botton2" value="收起" > 
+                    </li>
+					<li><a href="Music.html">音乐</a></li>
+					<li><a href="My.html">My</a></li>
+					<li><a href="index.html">主页</a></li>
+				</ul>
+			</li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="js/time.js"></script>
+    <script type="text/javascript" src="js/clock.js"></script>
+    <script type="text/javascript" src="js/change_backg.js"></script>
+</body>
+</html>

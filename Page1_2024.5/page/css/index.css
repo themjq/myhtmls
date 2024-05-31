@@ -1,0 +1,267 @@
+.html{
+  padding-bottom:500px;
+  margin: 0 auto;
+}
+/* 主页面内容区域 */
+.main{
+    top: 425px;
+    padding: 100px 50px 100px 25px;
+    height: 400px;
+    display: flex;
+    align-items: center; /* 子类垂直居中 */
+    overflow: scroll;
+}
+.main::-webkit-scrollbar {
+  width: 0px;
+  height: 5px;
+}
+.main::-webkit-scrollbar-thumb {
+  background: whitesmoke;
+  border-radius: 5px;
+}
+.main::-webkit-scrollbar-track {
+  background-color: rgba(26, 25, 24, 0.6);
+  border: 1px solid #ccc;
+}
+.banner{
+  position: relative;
+  left: 0;
+  right: 0;
+  min-height: 370px;
+  overflow: hidden;
+  min-width: 1400px;
+  background-image: url('../images/banner.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 1px solid black;
+}
+/* maindiv1 */
+.parent {
+    margin-top: 10px;
+    width: 475px;
+    height: 325px;
+    padding-top: 15px;
+    perspective: 1000px;
+    display: block;
+  }
+.showme{
+    padding-top: 40px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background-size: 60px 60px;
+    background-color: rgba(26, 25, 24, 0.3);
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+    /* transform-style: 定义元素如何在3D空间中转换其子元素。
+preserve-3d: 表示元素及其子元素应该被呈现为一个3D对象。这意味着子元素的变换（如transform: rotateX(), transform: rotateY(), transform: translateZ()等）将在3D空间中发生，而不是仅仅在2D平面上。 */
+  }
+  .top_detail .top_top img{
+  	margin-top: 15px;
+  	border-radius: 50%;
+  	width: 30px;
+  	height: 30px;
+  }
+  .showme:hover {
+    border: 1px solid black;
+    transform: scale(1.2);
+    }
+  .showme:active {
+        transform: scale(0.95);
+  }
+  .showme:hover {
+    background-position: -100px 100px, -100px 100px;
+    transform: rotate3d(0.5, 1, 0, 7deg);
+  }
+  .content-box {
+    background: #191817;
+    border-radius: 5px;
+    padding: 20px 25px 25px 25px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .content-box .card-title {
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+    margin-left: 25px;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 50px);
+  }
+  
+  .content-box .card-title:hover {
+    transform: translate3d(0px, 0px, 60px);
+  }
+  
+  .content-box .card-content {
+    margin-top: 10px;
+    width: 90%;
+    font-size: 12px;
+    font-weight: 700;
+    color: #f2f2f2;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 30px);
+    font-family: DouYin;
+  }
+  
+  .content-box .card-content:hover {
+    transform: translate3d(0px, 0px, 60px);
+  }
+  
+  .content-box .see-more {
+    cursor: pointer;  /*鼠标变小手*/
+    margin-top: 1rem;
+    margin-left: 15px;
+    display: inline-block;
+    font-weight: 900;
+    font-size: 9px;
+    text-transform: uppercase;
+    color: rgba(2, 13, 17, 0.774);
+    background: white;
+    padding: 0.5rem 0.7rem;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 10px);
+  }
+  
+  .content-box .see-more:hover {
+    transform: translate3d(0px, 0px, 30px);
+  }
+  
+  .date-box {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    height: 60px;
+    width: 50px;
+    background: white;
+    border: 1px solid #171717;
+    padding-top: 6px;
+    transform: translate3d(0px, 0px, 80px);
+    transition: all 0.5s;
+  }
+  .date-box:hover{
+    transform: translate3d(0px, 0px, 60px);
+  }
+  .date-box span {
+    display: block;
+    text-align: center;
+  }
+  .date-box .text {
+    color: rgba(2, 13, 17, 0.774);
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .date-box .month {
+    color: rgba(2, 13, 17, 0.774);
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  .date-box .date {
+    font-size: 12px;
+    font-weight: 900;
+    color: rgba(2, 13, 17, 0.774);
+  }
+   
+/*maindiv2  多个采用相同样式 */
+.mainDiv2{
+    padding-top: 15px;
+    margin-top: 25px;
+    width: 675px;
+    height: 325PX;
+    margin-left: 25px;
+    border: 1px solid white;
+    border-radius: 17px;    
+    text-align: center;
+    transition: all 0.5s;
+}
+.mainDiv2:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+.mainDiv2:active {
+    transform: scale(0.95);
+}
+.mainDiv2 .middle-top {
+    width: 95%;
+    height: 45px;
+    margin:12px 0 0px 28px;
+}
+.mainDiv2 .middle-top:hover .button{
+    opacity: 1;
+    right: 50px;
+}
+.mainDiv2 .middle-top h2 {
+    float: left;
+    font-size: 18px;
+    color: #fff;
+}
+
+.mainDiv2 .middle-top .button {
+    float: right;
+    height: 45px;
+    position: relative;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.mainDiv2 .middle-top .button a {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    margin-left: 3px;
+    transition: 0.5s;
+}
+.mainDiv2 .middle-top .button:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+
+}
+.mainDiv2 .middle-top .button:active{
+    transform: scale(0.85);
+    transition: 0.5s;
+}
+.mainDiv2 .middle-top .button a:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.mainDiv2 .middle-buttom {
+    width: 90%;
+    margin-left: 6%;
+    height: 225px;
+    display: flex;  /*父类设置flex布局,使子类可以在一行内存在*/
+    text-align: center;
+}
+.mainDiv2 .middle-buttom span{
+    width: 30%;
+    height: 90%;
+    margin-top: 15px;
+    padding-right: 15px;
+}
+.mainDiv2 .middle-buttom span img{
+    width: 125px;
+    height: 145px;
+    object-fit: cover;  
+    margin: 0 25px;
+}
+.mainDiv2 .middle-buttom span p{
+    color: aliceblue;
+    margin: 8px 25px;
+    position: relative;
+    left: 25px;
+}
+
+
+
+
+
+
+

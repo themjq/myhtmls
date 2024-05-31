@@ -1,0 +1,217 @@
+#icon{
+    position: absolute;
+    top: 10%;
+}
+hr{
+    position: relative;
+    top: 70px;
+    background-color:aliceblue;
+    opacity: 0.5;
+}
+.Main_div{
+    width: 100%;
+    height: 90%;
+    min-height: 500px;
+    min-width: 930px;
+    position: absolute;
+    margin-top: 4.5%;
+}
+.leftdiv{
+    width: 190px;
+    height: 100%;
+    padding: 0 10px;
+    position: absolute;
+    top:0;left: 0;
+}
+.mainWrap{
+    position: relative;
+    padding:0 310px 0 400px;
+    height: 100%;}
+.menuUL{
+    width: 100%;
+    padding: 10px 0;
+    border: 3px solid #ccc;
+}
+.menuLi{
+    width: 100%;
+    height: 36px;
+    transition: 0.5s;
+}
+.menuLi:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.menuLi:active{
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+.menuLi a{
+    font-size: 12px; 
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 4px;
+    position: relative;
+    color: #333;
+    text-decoration: none;
+}  
+.menuLi a:hover{
+    text-decoration:underline;
+    color: aqua;
+}
+.mainBody{
+    width: 85%;
+    height: 30px;
+    position:absolute;
+    left: 13.5%;
+}
+
+.detail{
+    position: relative;
+    margin-top: 0%;
+    width: 100%;
+    height: 100px;
+    border-collapse: collapse;/*去除边框间距*/
+}
+.detail tr{
+    width: 100%;
+    height: 70px;
+}
+.detail tr th{
+    width: 20%;
+    background-color: #333;
+    border-top: 2px solid white;
+}
+.detail tr td{
+    background-color: #333;
+    text-align: center;
+    opacity: 0.95;
+    color: azure;
+}
+.start{
+    font-family: '楷体';
+    transition: 0.5s;
+}
+.start:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: aqua;
+}
+.start:active{
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+#aplayer{
+    position: relative;
+    top: 10%;
+}
+#Play{
+    width: 1320px;
+    height: 500px;
+    left: 13.5%;
+    position: fixed;
+    top: 75px;
+    background-color: #333;
+    z-index: 100;
+    display: none;
+}
+#Play:target{
+    display: block;
+}
+#audio{
+    width: 20%;
+    height: 75px;
+    position: absolute;
+    bottom: 12%;
+    left: 42.5%;
+}
+#backg_Music{
+    position: absolute;
+    margin-bottom: 15%;
+    left: 32.5%;
+    width: 400px;
+    height: 400px;
+    background-image: repeating-radial-gradient(circle at 50% 50%,#333,#000 1%);
+    border-radius: 50%;
+    border: 5px solid #ccc;
+}
+#backg_Music #musicImg{
+    width: 300px;
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    left: 12%;
+    bottom: 12%;    
+    animation-fill-mode:forwards; /*保留最后一帧*/
+}
+@keyframes cirImg{
+    0% {transform : rotate(0deg);}
+    100% {transform : rotate(360deg);}
+}
+.operate{
+    position: absolute;
+    bottom: 2%;
+    left: 40%;
+}
+.operate img{
+    width: 50px;
+    float: left;
+}
+.operate img:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+.operate img:active{
+    transition: 0.5s;
+    transform: scale(0.9);
+    animation: stronger 2s linear alternate;
+}
+@keyframes stronger{
+    from{opacity: 0.1;}
+    to{opacity: 1.5;};
+}
+#time_plan{
+    position: absolute;
+    bottom: 13%;
+    left: 30%;
+}
+#time_plan #plan{
+    width: 400px;
+    height: 10px;
+    color: aqua;
+    -webkit-appearance: none;/*取消默认range样式*/
+    overflow:hidden;
+    outline: none;
+    background:none;
+    border: 1px solid white;
+    background-color: azure;
+    border-radius: 50px;
+}
+#time_plan #plan::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    position: relative;
+    width:10px;
+    height:10px;
+    background:aqua;
+    border-radius:50%;
+    transition:.2s;
+}
+#time_plan p{
+    float: left;
+    color: aqua;
+    display: block;
+}
+#volume_div:hover #volume{
+    display: block;
+    animation: show_volue 0.1s linear;
+}
+#volume{
+    position: relative;
+    top: 15px;
+    display: none;
+}
+@keyframes show_volue{
+    from{width: 0px;display: block;}
+    to{width: 100px;display: block;}
+}

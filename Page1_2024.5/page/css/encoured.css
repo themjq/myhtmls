@@ -1,0 +1,170 @@
+.main{
+    width: 1200px;
+}
+.main .left{
+    width: 200px;
+    height: 375px;
+    margin-right: 25px;
+}
+/* left内 */
+.toggle{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    
+}
+.toggle h2{
+    font-family:XiangCui;
+    margin-left: 45px;
+    color:azure;
+}
+.sidebar{
+    background-color: #1b1b1b;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.sidebar:hover{
+    box-shadow: none;
+}
+.top_detail .top_top img{
+	margin-top: 15px;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+}
+.sidebar a{
+    display: flex;
+    align-items: center;
+    color:whitesmoke;
+    height: 75px;
+    position: relative;
+    margin-left: 15px;
+    transition: all 0.3s ease;
+}
+.sidebar a img{
+    width: 50px;
+    height: 50px;
+}
+.sidebar a .img2{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.sidebar a span{
+    font-size: 28px;
+    transition: all 0.3s ease;
+}
+.sidebar a:active{
+    width: 100%;
+    margin-left: 0;
+}
+.sidebar a:hover span{
+    margin-left: 15px;
+}
+
+/* left */
+
+
+.main .center{
+    width: 1000px;
+}
+.center_detail{
+    width: 90%;
+    margin-left: 5%;
+    min-height: 265px;
+    margin-top: 25px;
+}
+.center_detail .detail_top{
+    padding-top: 5px;
+    width: 96%;
+    margin-left: 2%;
+    height: 35px;
+}
+.center_detail .detail_top img{
+    width: 30px;
+    height: 30px;
+}
+.center_detail .detail_top a{
+    font-size: small;
+    font-family: Douyin;
+    color: wheat;
+    position: relative;
+    top: -5px;
+}
+.center_detail .detail_center{
+    width: 90%;
+    margin-left: 5%;
+    height: 150px;
+    display: flex;
+}
+.center_detail .detail_center img{
+    margin-top: 15px;
+    margin-left: 25px;
+    border-radius: 15px;
+    width: 125px;
+    object-fit: cover; 
+    height: 125px;
+    transition: all 0.5s;  /*动画*/
+}
+.center_detail .detail_center img:hover{
+    transform:scale(1.2);
+    z-index: 100;
+}
+.center_detail .detail_center .detail_describe{
+    width: 600px;
+    height: 125px;
+    margin-top: 18px;
+    margin-left: 15px;
+    font-family: ShaYu;
+    font-size: 15px;
+}
+.center_detail .detail_center .detail_describe a{
+    background-color: #1b1b1b;
+    color: wheat;
+    display: block;
+    margin-top: 7px;
+}
+.center_detail .detail_center .detail_describe a:hover{
+    color: #8ea0af;
+}
+.center_detail .detail_bottom{
+    width: 100%;
+    height: 45px;
+
+}
+.center_detail .detail_bottom button{
+    margin-left: 700px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff80;
+    background: transparent;  /*背景透明*/
+    cursor: pointer;
+    border: 1px solid #ffffff80;
+    transition: 0.5s ease;
+}
+.detail_button:hover{
+    color: #ffffff;
+    background: #7e94a5;
+    transform: scale(1.1);
+}
+.detail_button:active{
+    transform: scale(0.8);
+}
+.card2{
+    cursor: pointer; /*鼠标放上时变小手*/
+    transition: all 0.5s;  /*动画*/
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.card2:hover{
+    transform: scale(1.05);
+    transition:0.5s;
+    border: 1px solid #ffffff;
+}
+
+

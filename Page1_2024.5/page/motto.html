@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 设置网页缩放信息 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入本地css文件 -->
+    <link rel="stylesheet" href="css/frame.css">   
+    <link rel="stylesheet" href="css/motto.css"> 
+    <!-- 网页标题 -->
+    <title>个人主页-座右铭</title>
+</head>
+<body>
+    <div class="html">
+        <!-- 顶部 -->
+        <header class="top">
+            <div class="top_detail">
+                <div class="top_top">
+                    <span class="logo">XXX</span>
+					<img src="images/刀劈西瓜.jpg" >
+                    <p>座右铭</p>
+                </div>
+                <!-- 分割线 -->
+                <div class="partioner"></div>
+                <div class="navigation">
+                    <div class="top_buttom">
+                        <ul class="detail">
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="my.html">关于我</a></li>
+                            <li><a href="enamoured.html">爱好</a></li>
+                            <li><a href="#" id="default" class="loader">电影格言</a></li>
+                            <li><a href="books.html">爱看书籍</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 主页面内容区 -->
+        <div class="main"> 
+            <div class="left">
+                <div class="videoArea">
+                    <video id="myVideo" class="divCartoon card2" controls>  
+                        <source id="videoSource" src="videos/0.mp4" type="video/mp4">  
+                        Your browser does not support the video tag.  
+                    </video> 
+                </div>
+                <p class="description" id="videoDes">拿笔记一下，我的号码不好记，幺叁拐九拐洞拐六拐洞幺拐0</p>
+            </div>
+            <div class="right" id="movies">
+                <div class="movie"  onclick="updateMovie(0)">
+                    <img src="videos/img/0.png">
+                    <div class="movieText">
+                        <p>拿笔记一下，我的号码不好记，幺叁拐九拐洞拐六拐洞幺拐</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">  
+            const videoSource=document.getElementById('videoSource');
+            const videoDes=document.getElementById('videoDes');
+            const movies=document.getElementById('movies');
+            const myVideo=document.getElementById('myVideo');
+            const moviesSrc=[
+                "videos/0.mp4",
+                "videos/1.mp4",
+                "videos/2.mp4",
+                "videos/3.mp4",
+                "videos/4.mp4",
+                "videos/5.mp4"
+            ];
+            const moviesImg=[
+                "videos/img/0.png",
+                "videos/img/1.png",
+                "videos/img/2.png",
+                "videos/img/3.png",
+                "videos/img/4.png",
+                "videos/img/5.png"
+            ];
+            const moviesDes=[
+                "拿笔记一下，我的号码不好记，幺叁拐九拐洞拐六拐洞幺拐0",
+                "这个世界本身就没有所谓的清白而言，你能坦言，你从来就没说过慌，这是自欺欺人",
+                "我们坐的都是奔驰，都是劳斯莱斯，你坐马自达，怪不得你塞车，你坐马自达，你根本没有资格来参加这个会哟",
+                "四年前我给他们机会，他们不要今天我给你机会你要不要？",
+                "心里话谁写日记里啊，写出来的能叫心里话吗？下贱",
+                "每个看似滑稽小丑的无名之辈，都有着不为人知的悲喜与坚持",
+            ];
+            
+            const moviesText=[
+                "拿笔记一下，我的号码不好记，幺叁拐九拐洞拐六拐洞幺拐",
+                "这个世界本身就没有所谓的清白而言，你能坦言，你从来就没说过慌，这是自欺欺人",
+                "我们坐的都是奔驰，都是劳斯莱斯，你坐马自达，怪不得你塞车，你坐马自达，你根本没有资格来参加这个会哟",
+                "四年前我给他们机会，他们不要今天我给你机会你要不要？",
+                "心里话谁写日记里啊，写出来的能叫心里话吗？下贱",
+                "每个看似滑稽小丑的无名之辈，都有着不为人知的悲喜与坚持",
+            ];
+            window.onload=function(){
+                for(var i=1;i<moviesImg.length;i++){
+                    //父类movie
+                    var theDiv=document.createElement('div');
+                    theDiv.classList="movie";
+                    // theDiv.id='movie'+(i+1);
+                    //子类img
+                    var theImg=document.createElement('img');
+                    theImg.src=moviesImg[i];
+                    //子类movieText
+                    var theTextDiv=document.createElement('movieText');
+                    theTextDiv.classList="movieText";
+                    //子类movieText内p
+                    var textP=document.createElement('p');
+                    textP.innerText=moviesText[i];
+                    //添加
+                    theTextDiv.appendChild(textP);
+                    
+                    theDiv.appendChild(theImg);
+                    theDiv.appendChild(theTextDiv);
+
+                    //添加点击触发函数updateMovie 并传入对应id
+                    theDiv.onclick=(function(currentId) {  
+                        return function() {  
+                            updateMovie(currentId);  
+                        };  
+                    })(i); 
+                    
+                    //添加到右侧视频信息里面
+                    movies.appendChild(theDiv);
+                }
+            }
+
+            function updateMovie(id){
+                videoSource.src=moviesSrc[id];
+                videoDes.innerText=moviesDes[id];
+                myVideo.load();
+            }
+        </script>
+        
+
+        </div>
+    </div>
+    <!-- 版权信息 -->
+    <div class="copyrights">
+        <p class="footer">Copyright &copy; 2021.Company name All rights reserved.</p>
+    </div>
+</body>
+</html>

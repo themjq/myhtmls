@@ -1,0 +1,238 @@
+/* 清楚浏览器的默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    /*移除选中元素时，其周围的轮廓线*/
+    appearance: 0;
+    /*移除表单元素的默认样式*/
+    border: 0;
+    /*移除元素边框*/
+    text-decoration: none;
+    /*移除文本装饰效果(下划线等)*/
+    box-sizing: border-box;
+    /*设置元素的宽度和高度会包括内容、内边距和边框，但不包括外边距*/
+    user-select: none;  /*禁止用户选中*/
+}
+
+@font-face {
+    font-family: 'Italianno';   /*字体名称*/
+    src: url('../font/Italianno.ttf');       /*字体源文件*/
+}
+
+@font-face {
+    font-family: 'ZaiJia'; 
+    src: url('../font/ZaiJia.ttf');   
+}
+
+@font-face {
+    font-family: 'DSBold'; 
+    src: url('../font/DancingScript-Bold.ttf');   
+}
+.html{
+    position: relative;
+    left: 0;
+    right: 0;
+    min-width: 1400px;
+    height: auto;
+    min-height: 100%;
+    margin: 0 auto;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-image: url("../images/background.jpg");
+    background-color: #c1dfe1; /*图片无法显示时候显示该颜色*/
+    background-size: cover;
+    background-attachment:fixed;  /*图片滚动形式:静止*/
+    background-size: 100%;
+    font-family: Zaijia;
+    background-position: center center;  
+    z-index: 0;
+}
+/* 顶部 */
+.top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #282828;
+}
+.top .top_detail{
+    width: 1000px;
+    margin: 0 auto;
+}
+.top_top{
+    display: flex;  /*父类设置flex布局,使子类可以在一行内存在*/
+    width: 100%;
+    background-color: #282828;
+    color: aliceblue;
+    
+}
+ /* logo */
+.top .top_top .logo{
+    font-family: 'Italianno';
+    font-size: 2rem;
+    line-height: 1.1;
+    letter-spacing:3px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.top .top_top p{
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+.top .navigation{
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid black;
+}
+.top .partioner{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background-color: black;
+}
+.top .top_buttom{
+    margin-top: 8px;
+    background-color: #e2e7e7;
+    width: 100%;
+    height: 32px;
+}
+.top .top_buttom ul{
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+}
+.top .top_buttom ul li{
+    padding: 1px 5px;
+    margin: 0px 10px 1px 10px;
+    list-style-type:none;  /*去除前面的圆点*/
+    position: relative;
+    transition: all 0.5s;
+    top: 12px;
+}
+.top .top_buttom ul li:hover{
+    
+    color:  #171717;
+    top: 5px;
+}
+.top .top_buttom ul li a{
+    color: #7a7374;
+    transition: all 0.5s;
+}
+.top .top_buttom ul li:hover a{
+    font-weight: bolder;
+}
+.loader {
+    position: relative;
+    border-radius: 2px;
+    color: black;
+    font-weight: bold;
+    bottom: 5px;
+    font-size: 20px;
+  }
+/*default 默认选中页面*/
+#default{
+    color: #171717;
+}
+/*main部分*/
+.main{
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1500px;
+    position: relative;
+    top: 100px;
+    min-height: 700px;
+    background-color: rgba(26, 25, 24, 0.6);
+    margin-bottom: 125px;
+    border-radius: 15px;
+}
+/*通用div样式*/
+.divCartoon{
+    cursor: pointer; /*鼠标放上时变小手*/
+    transition: all 0.5s;  /*动画*/
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.divCartoon:hover{
+    transform: scale(1.05);
+    border: 1px solid #ffffff;
+}
+.divCartoon:active{
+    transform: scale(0.9);
+}
+
+/* 版权部分 */
+.copyrights {
+    border-top: 1px dashed rgba(255, 255, 255, 0.1);
+    background-color: #1f1f1f;
+    min-width: 1400px;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.copyrights .footer{
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
